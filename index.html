@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo"><a href="#">Shop</a></div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="mens.html">Mens</a></li>
+                    <li><a href="#">Smart Gear</a></li>
+                    <li><a href="#">Accessories</a></li>
+                </ul>
+                <div class="cart">
+                    <img src="./images/cart.png" />
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section style="display: block; position:relative;  height:100vh; ">
+        <div class="container-full">
+            <div class="homebanner">
+                <div class="css-slider-wrapper">
+                    <input
+                      type="radio"
+                      name="slider"
+                      class="slide-radio1"
+                      checked
+                      id="slider_1"
+                    />
+                    <input type="radio" name="slider" class="slide-radio2" id="slider_2" />
+                    <input type="radio" name="slider" class="slide-radio3" id="slider_3" />
+                    <input type="radio" name="slider" class="slide-radio4" id="slider_4" />
+              
+                    <!-- Slider Pagination -->
+                    <div class="slider-pagination">
+                      <label for="slider_1" class="page1"></label>
+                      <label for="slider_2" class="page2"></label>
+                      <label for="slider_3" class="page3"></label>
+                      <label for="slider_4" class="page4"></label>
+                    </div>
+              
+                    <!-- Slider #1 -->
+                    <div class="slider slide-1">
+                      <img src="images/model-1.png" alt="" />
+                      <div class="slider-content">
+                        <h4>New Product</h4>
+                        <h2>Denim Longline T-Shirt Dress With Split</h2>
+                        <button type="button" class="buy-now-btn" name="button">$130</button>
+                      </div>
+                      <div class="number-pagination">
+                        <span>1</span>
+                      </div>
+                    </div>
+              
+                    <!-- Slider #2 -->
+                    <div class="slider slide-2">
+                      <img src="images/model-2.png" alt="" />
+                      <div class="slider-content">
+                        <h4>New Product</h4>
+                        <h2>Denim Longline T-Shirt Dress With Split</h2>
+                        <button type="button" class="buy-now-btn" name="button">$130</button>
+                      </div>
+                      <div class="number-pagination">
+                        <span>2</span>
+                      </div>
+                    </div>
+              
+                    <!-- Slider #3 -->
+                    <div class="slider slide-3">
+                      <img src="images/model-3.png" alt="" />
+                      <div class="slider-content">
+                        <h4>New Product</h4>
+                        <h2>Denim Longline T-Shirt Dress With Split</h2>
+                        <button type="button" class="buy-now-btn" name="button">$130</button>
+                      </div>
+                      <div class="number-pagination">
+                        <span>3</span>
+                      </div>
+                    </div>
+              
+                    <!-- Slider #4 -->
+                    <div class="slider slide-4">
+                      <img src="images/model-4.png" alt="" />
+                      <div class="slider-content">
+                        <h4>New Product</h4>
+                        <h2>Denim Longline T-Shirt Dress With Split</h2>
+                        <button type="button" class="buy-now-btn" name="button">$130</button>
+                      </div>
+                      <div class="number-pagination">
+                        <span>4</span>
+                      </div>
+                    </div>
+                  </div>
+              
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-full">
+            <div class="demo">
+
+                <!-- <ul id="posts-list"></ul>  -->
+                
+                <button id="fetchDataBtn">Fetch Data</button>
+                <div id="dataContainer"></div>
+            </div>
+    
+        </div>
+    </section>
+
+
+
+    <!-- <section>
+        <div class="bottomSection">
+            <div class="container">
+                <div class="footer">
+                    <div>VENIA</div>
+                    <div>© Company Name Address Ave, City Name, State ZIP</div>
+                    <div><span>Terms of Use</span> <span>Privacy Policy</span></div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <script>
+        // Your jQuery code goes here
+        $(document).ready(function(){
+            $('h1').click(function(){
+                $(this).css('color', 'red');
+            });
+        });
+    </script>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script> -->
+<script src="./js/jquery.js"></script>
+<script src="./js/api.js"></script>
+</body>
+</html>
